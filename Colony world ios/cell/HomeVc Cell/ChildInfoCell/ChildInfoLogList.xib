@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="263" id="KGk-i7-Jjw" customClass="ChildInfoLogList" customModule="Colony_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="263"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cb2-bE-02m">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxe-qo-hDA">
+                                <rect key="frame" x="8" y="22" width="37" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="2D9-OR-dTl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5y7-a9-91e">
+                                <rect key="frame" x="312" y="9" width="58" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="CKc-bg-uaa"/>
+                                    <constraint firstAttribute="height" constant="42" id="PnZ-RI-WRx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color systemColor="labelColor"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ReloadAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6jR-w2-K7J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5y7-a9-91e" firstAttribute="top" secondItem="cb2-bE-02m" secondAttribute="top" constant="9" id="1jj-fg-585"/>
+                            <constraint firstAttribute="height" constant="51" id="2XB-do-xRI"/>
+                            <constraint firstItem="Xxe-qo-hDA" firstAttribute="leading" secondItem="cb2-bE-02m" secondAttribute="leading" constant="8" id="6P8-RD-YuO"/>
+                            <constraint firstAttribute="bottom" secondItem="Xxe-qo-hDA" secondAttribute="bottom" constant="8" id="GIi-hN-zEM"/>
+                            <constraint firstAttribute="width" constant="390" id="Gzd-tS-unB"/>
+                            <constraint firstAttribute="trailing" secondItem="5y7-a9-91e" secondAttribute="trailing" constant="20" id="JOb-jy-S04"/>
+                            <constraint firstAttribute="bottom" secondItem="5y7-a9-91e" secondAttribute="bottom" id="WyZ-Sh-Ajg"/>
+                            <constraint firstItem="Xxe-qo-hDA" firstAttribute="top" secondItem="cb2-bE-02m" secondAttribute="top" constant="22" id="qzg-Wh-GcD"/>
+                        </constraints>
+                    </view>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="02x-Kf-3EU">
+                        <rect key="frame" x="0.0" y="51" width="390" height="212"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="02x-Kf-3EU" secondAttribute="bottom" id="7BG-SC-wWq"/>
+                    <constraint firstItem="02x-Kf-3EU" firstAttribute="top" secondItem="cb2-bE-02m" secondAttribute="bottom" id="HDl-An-wFL"/>
+                    <constraint firstAttribute="trailing" secondItem="cb2-bE-02m" secondAttribute="trailing" id="MXd-5a-uMU"/>
+                    <constraint firstItem="cb2-bE-02m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y44-cW-lGg"/>
+                    <constraint firstItem="cb2-bE-02m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dnm-Vb-Waq"/>
+                    <constraint firstAttribute="trailing" secondItem="02x-Kf-3EU" secondAttribute="trailing" id="ivN-jd-g28"/>
+                    <constraint firstItem="02x-Kf-3EU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="smc-tY-Okg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mTableView" destination="02x-Kf-3EU" id="OQw-Mp-ZPc"/>
+                <outlet property="reloadBtn" destination="5y7-a9-91e" id="XtK-Wi-Hqa"/>
+            </connections>
+            <point key="canvasLocation" x="29.007633587786259" y="65.140845070422543"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

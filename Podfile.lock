@@ -1,0 +1,125 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Firebase/CoreOnly (10.6.0):
+    - FirebaseCore (= 10.6.0)
+  - Firebase/Messaging (10.6.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 10.6.0)
+  - FirebaseCore (10.6.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Logger (~> 7.8)
+  - FirebaseCoreInternal (10.6.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseInstallations (10.6.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
+  - FirebaseMessaging (10.6.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleDataTransport (~> 9.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Reachability (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FSPagerView (0.8.3)
+  - GoogleDataTransport (9.2.1):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.11.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (7.11.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.0)"
+  - GoogleUtilities/Reachability (7.11.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.11.0):
+    - GoogleUtilities/Logger
+  - ImageLoader (0.15.0)
+  - iOSDropDown (0.4.0)
+  - IQKeyboardManagerSwift (6.5.11)
+  - Kingfisher (7.5.0)
+  - MBCircularProgressBar (0.3.5)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.2.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SideMenu (6.5.0)
+  - SwiftGridView (0.7.6)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.1)
+  - Firebase/Messaging
+  - FSPagerView
+  - ImageLoader
+  - iOSDropDown
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - MBCircularProgressBar
+  - SDWebImage (~> 4.0)
+  - SideMenu
+  - SwiftGridView (~> 0.7)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Firebase
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - FirebaseInstallations
+    - FirebaseMessaging
+    - FSPagerView
+    - GoogleDataTransport
+    - GoogleUtilities
+    - ImageLoader
+    - iOSDropDown
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MBCircularProgressBar
+    - nanopb
+    - PromisesObjC
+    - SDWebImage
+    - SideMenu
+    - SwiftGridView
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Firebase: f13680471b021937f2230ea8503c7809d8c29806
+  FirebaseCore: fa80ad16a62d52f67274b5b88304c3a318bbf9a4
+  FirebaseCoreInternal: c7cd505e2136811096b225ac388d6254a2622362
+  FirebaseInstallations: 13dde135fa0524e15bddb133ccc8465c53a1b3f3
+  FirebaseMessaging: fd93783258c53ae5cdb9b41bf0c51606a677f2d5
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  GoogleDataTransport: ea169759df570f4e37bdee1623ec32a7e64e67c4
+  GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
+  ImageLoader: e0635d52020d64dc7687e3a3b14dc53212ac0442
+  iOSDropDown: ce9daa584eaa5567cafc1b633e3cc7eb6d9cea42
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Kingfisher: b9c2a4a4af2990a768445c277359b27bde287d71
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SwiftGridView: bf66a5a78b238f315538d4f0ba4b10bbc906b908
+
+PODFILE CHECKSUM: 1ec4853a8a9507d790ffbae8ac475382a2d91026
+
+COCOAPODS: 1.11.3

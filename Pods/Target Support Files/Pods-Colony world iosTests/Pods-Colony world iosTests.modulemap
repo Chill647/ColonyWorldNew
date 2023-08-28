@@ -1,0 +1,6 @@
+framework module Pods_Colony_world_iosTests {
+  umbrella header "Pods-Colony world iosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

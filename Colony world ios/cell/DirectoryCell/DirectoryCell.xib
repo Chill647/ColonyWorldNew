@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DirectoryCell" selectionStyle="default" indentationWidth="10" rowHeight="234" id="KGk-i7-Jjw" customClass="DirectoryCell" customModule="Colony_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCW-cS-OAt">
+                        <rect key="frame" x="9" y="15" width="396" height="201"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tn4-2q-Qsm">
+                                <rect key="frame" x="8" y="13" width="133" height="168"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPP-yv-tBC">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLt-48-Eru">
+                                        <rect key="frame" x="0.0" y="56" width="133" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVs-gk-RYz">
+                                        <rect key="frame" x="0.0" y="112" width="133" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="7ZG-mU-zKq"/>
+                                    <constraint firstAttribute="width" constant="133" id="kCh-Ef-BTe"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TIm-Kz-AmG">
+                                <rect key="frame" x="263" y="13" width="125" height="168"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sahil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McE-W9-o6b">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sahigghjghjl@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0a-l1-SVd">
+                                        <rect key="frame" x="0.0" y="56" width="125" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9787387487" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xre-RR-t4I">
+                                        <rect key="frame" x="0.0" y="112" width="125" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="RRf-U3-oR0"/>
+                                    <constraint firstAttribute="width" constant="125" id="scJ-nl-4Ib"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tn4-2q-Qsm" firstAttribute="leading" secondItem="KCW-cS-OAt" secondAttribute="leading" constant="8" id="7uq-jx-YiH"/>
+                            <constraint firstAttribute="trailing" secondItem="TIm-Kz-AmG" secondAttribute="trailing" constant="8" id="KAm-J2-v73"/>
+                            <constraint firstAttribute="bottom" secondItem="tn4-2q-Qsm" secondAttribute="bottom" constant="20" id="L8W-j3-uie"/>
+                            <constraint firstItem="tn4-2q-Qsm" firstAttribute="top" secondItem="KCW-cS-OAt" secondAttribute="top" constant="13" id="ayj-g7-Sd7"/>
+                            <constraint firstAttribute="bottom" secondItem="TIm-Kz-AmG" secondAttribute="bottom" constant="20" id="rUy-Jh-D3x"/>
+                            <constraint firstItem="TIm-Kz-AmG" firstAttribute="top" secondItem="KCW-cS-OAt" secondAttribute="top" constant="13" id="vP4-jo-qvs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KCW-cS-OAt" secondAttribute="trailing" constant="9" id="TFR-1D-32q"/>
+                    <constraint firstItem="KCW-cS-OAt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="V2F-vj-ZrR"/>
+                    <constraint firstAttribute="bottom" secondItem="KCW-cS-OAt" secondAttribute="bottom" constant="18" id="twm-fk-yPg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contactlbl" destination="Xre-RR-t4I" id="KHE-wu-8EI"/>
+                <outlet property="emailLbl" destination="L0a-l1-SVd" id="7Tl-ed-iRV"/>
+                <outlet property="expandView" destination="KCW-cS-OAt" id="rAl-BB-1t9"/>
+                <outlet property="titleLbl" destination="McE-W9-o6b" id="X7a-2V-ia8"/>
+            </connections>
+            <point key="canvasLocation" x="192.36641221374046" y="55.633802816901408"/>
+        </tableViewCell>
+    </objects>
+</document>

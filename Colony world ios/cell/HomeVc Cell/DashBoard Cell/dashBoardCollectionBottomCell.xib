@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dashBoardCollectionBottomCell" id="gTV-IL-0wX" customClass="dashBoardCollectionBottomCell" customModule="Colony_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9m-fl-Ydi">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="104"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Maintenace" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEd-VI-Lnn">
+                                <rect key="frame" x="0.0" y="83.666666666666671" width="130" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfU-Kp-yhI">
+                                <rect key="frame" x="8" y="9" width="114" height="72"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PayMaintenanceSide" translatesAutoresizingMaskIntoConstraints="NO" id="Tjm-7d-3A1">
+                                        <rect key="frame" x="8" y="15" width="98" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="jvb-NF-wa2"/>
+                                            <constraint firstAttribute="width" constant="98" id="kXs-XQ-QnU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="Tjm-7d-3A1" firstAttribute="top" secondItem="ZfU-Kp-yhI" secondAttribute="top" constant="15" id="7K8-75-PcN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tjm-7d-3A1" secondAttribute="bottom" constant="14" id="Rn6-Se-nlv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tjm-7d-3A1" secondAttribute="trailing" constant="8" id="VH9-bp-YES"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tjm-7d-3A1" secondAttribute="bottom" constant="14" id="fq1-xN-MqG"/>
+                                    <constraint firstItem="Tjm-7d-3A1" firstAttribute="top" secondItem="ZfU-Kp-yhI" secondAttribute="top" constant="15" id="imE-zF-VbB"/>
+                                    <constraint firstItem="Tjm-7d-3A1" firstAttribute="leading" secondItem="ZfU-Kp-yhI" secondAttribute="leading" constant="8" id="jiy-I4-MsP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tjm-7d-3A1" secondAttribute="trailing" constant="8" id="nqN-Me-nHX"/>
+                                    <constraint firstItem="Tjm-7d-3A1" firstAttribute="leading" secondItem="ZfU-Kp-yhI" secondAttribute="leading" constant="8" id="rb6-v7-YbN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadious">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aEd-VI-Lnn" secondAttribute="bottom" id="6MK-rQ-HPn"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZfU-Kp-yhI" secondAttribute="trailing" constant="8" id="HaX-Yq-Gwi"/>
+                            <constraint firstItem="ZfU-Kp-yhI" firstAttribute="top" secondItem="N9m-fl-Ydi" secondAttribute="top" constant="9" id="KBI-pu-tiL"/>
+                            <constraint firstItem="ZfU-Kp-yhI" firstAttribute="leading" secondItem="N9m-fl-Ydi" secondAttribute="leading" constant="8" id="OHv-Nm-2ep"/>
+                            <constraint firstItem="aEd-VI-Lnn" firstAttribute="top" secondItem="ZfU-Kp-yhI" secondAttribute="bottom" constant="2.6666666666666714" id="QWB-tT-duE"/>
+                            <constraint firstAttribute="trailing" secondItem="aEd-VI-Lnn" secondAttribute="trailing" id="Sx9-ye-eFS"/>
+                            <constraint firstItem="aEd-VI-Lnn" firstAttribute="leading" secondItem="N9m-fl-Ydi" secondAttribute="leading" id="Ud4-Wh-hJ3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="N9m-fl-Ydi" secondAttribute="trailing" id="8CF-Sa-F56"/>
+                <constraint firstAttribute="bottom" secondItem="N9m-fl-Ydi" secondAttribute="bottom" id="8th-k7-f7A"/>
+                <constraint firstItem="N9m-fl-Ydi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vk6-OI-13y"/>
+                <constraint firstItem="N9m-fl-Ydi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yh5-xS-kgi"/>
+            </constraints>
+            <size key="customSize" width="130" height="104"/>
+            <connections>
+                <outlet property="CollectionImg" destination="Tjm-7d-3A1" id="tjs-al-YDv"/>
+                <outlet property="CollectionLabel" destination="aEd-VI-Lnn" id="bY1-HZ-ljG"/>
+                <outlet property="InnerView" destination="ZfU-Kp-yhI" id="tnx-Mk-GXT"/>
+            </connections>
+            <point key="canvasLocation" x="167.93893129770993" y="6.3380281690140849"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PayMaintenanceSide" width="30" height="30"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Colony_world_ios {
+  umbrella header "Pods-Colony world ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

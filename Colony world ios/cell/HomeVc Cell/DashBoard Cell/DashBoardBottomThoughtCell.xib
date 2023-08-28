@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="183" id="KGk-i7-Jjw" customClass="DashBoardBottomThoughtCell" customModule="Colony_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="183"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yai-lK-McD">
+                        <rect key="frame" x="13" y="24" width="371" height="135"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="“Faith is the bird that feels the light and sings when the dawn is still dark.” – Rabindranath Tagore" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TsP-gP-58c">
+                                <rect key="frame" x="8" y="30" width="220" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="00h-cX-wRI"/>
+                                    <constraint firstAttribute="width" constant="220" id="waH-fD-BMZ"/>
+                                </constraints>
+                                <color key="textColor" red="0.019607843140000001" green="0.21960784310000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thought of the Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a14-5n-YTd">
+                                <rect key="frame" x="15" y="0.0" width="194" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="MpR-MX-UwD"/>
+                                    <constraint firstAttribute="height" constant="29" id="emU-aO-pNt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.019607843137254902" green="0.2196078431372549" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThoughtImage" translatesAutoresizingMaskIntoConstraints="NO" id="Vjy-SS-q0t">
+                                <rect key="frame" x="263" y="0.0" width="108" height="113"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TsP-gP-58c" firstAttribute="top" secondItem="a14-5n-YTd" secondAttribute="bottom" constant="1" id="0jn-xA-0qi"/>
+                            <constraint firstAttribute="bottom" secondItem="Vjy-SS-q0t" secondAttribute="bottom" constant="22" id="9FY-bj-XLK"/>
+                            <constraint firstItem="Vjy-SS-q0t" firstAttribute="leading" secondItem="TsP-gP-58c" secondAttribute="trailing" constant="35" id="Nw3-Oz-xo0"/>
+                            <constraint firstItem="a14-5n-YTd" firstAttribute="top" secondItem="yai-lK-McD" secondAttribute="top" id="SLi-Dn-rk7"/>
+                            <constraint firstItem="a14-5n-YTd" firstAttribute="leading" secondItem="yai-lK-McD" secondAttribute="leading" constant="15" id="Up8-zS-nB1"/>
+                            <constraint firstItem="TsP-gP-58c" firstAttribute="leading" secondItem="yai-lK-McD" secondAttribute="leading" constant="8" id="VNP-u8-cYu"/>
+                            <constraint firstAttribute="trailing" secondItem="Vjy-SS-q0t" secondAttribute="trailing" id="WiP-8F-s0U"/>
+                            <constraint firstAttribute="bottom" secondItem="TsP-gP-58c" secondAttribute="bottom" constant="25" id="dY5-jr-aul"/>
+                            <constraint firstItem="Vjy-SS-q0t" firstAttribute="top" secondItem="yai-lK-McD" secondAttribute="top" id="q1Q-i2-lmF"/>
+                            <constraint firstAttribute="trailing" secondItem="a14-5n-YTd" secondAttribute="trailing" constant="162" id="rUc-Bn-ieK"/>
+                            <constraint firstItem="TsP-gP-58c" firstAttribute="top" secondItem="a14-5n-YTd" secondAttribute="bottom" constant="1" id="yIT-QQ-6rq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yai-lK-McD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="D0g-cf-usb"/>
+                    <constraint firstAttribute="trailing" secondItem="yai-lK-McD" secondAttribute="trailing" constant="12" id="PTX-96-5gU"/>
+                    <constraint firstItem="yai-lK-McD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="dl2-zd-Y8E"/>
+                    <constraint firstAttribute="bottom" secondItem="yai-lK-McD" secondAttribute="bottom" constant="24" id="zBw-W8-jG0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CellView" destination="yai-lK-McD" id="6Yy-pR-b22"/>
+            </connections>
+            <point key="canvasLocation" x="178.62595419847327" y="23.591549295774648"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ThoughtImage" width="96" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
